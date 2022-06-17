@@ -1,0 +1,87 @@
+// Container
+.container {
+  //max-width: ($containerWidth + $containerPadding) + px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 25px auto;
+  padding: 45px $containerSidePadding + px;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+}
+
+@mixin for-mobile-s {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-m {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-l {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-laptop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-l {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin for-4k {
+  @media (max-width: 2560px) {
+    @content;
+  }
+}
+
+@include for-tablet {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+
+// Body Locked
+body {
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>WebDevPortfolio</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"> <img src="./images/logo.svg" alt="not-found"> </a>
+          </div>
+          <ul class="menu">
+            <li class="menu__item"><a href="#about" class="menu__item-link" data-scroll>About</a></li>
+            <li class="menu__item"><a href="#projects" class="menu__item-link" data-scroll>Projects</a></li>
+            <li class="menu__item"><a href="#reviews" class="menu__item-link" data-scroll>Reviews</a></li>
+            <li class="menu__item"><a href="#contact" class="menu__item-link" data-scroll>Contacts </a></li>
+          </ul>
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <section class="splash container">
+        <div class="splash-text">
+          <h1>Michael Scofield</h1>
+          <h3>Fullstack web developer</h3>
+          <div class="splash-text__items">
+            <div class="splash-text__item">UI/UX Design</div>
+            <div class="splash-text__item">QA Testing</div>
+            <div class="splash-text__item">Mobile Apps</div>
+            <div class="splash-text__item">Web development</div>
+          </div>
+        </div>
+        <div class="splash-img">
+          <canvas id="canvasOne" width="550" height="550">
+            Your browser does not support HTML5 canvas.
+          </canvas>
+        </div>
+      </section>
+      <section class="about-us container" id="about">
+        <h6>About</h6>
+        <h2>History of my development:</h2>
+        <div class="about-us_wrapper">
+          <div class="about-us_box">
+            <h3>2016</h3>
+            <p>First project. Blog for the teacher</p>
+          </div>
+          <div class="about-us_box">
+            <h3>2017</h3>
+            <p>Development of the first mobile application</p>
+          </div>
+          <div class="about-us_box">
+            <h3>2018</h3>
+            <p>The portfolio includes over 100 projects</p>
+          </div>
+          <div class="about-us_box">
+            <h3>2019</h3>
+            <p>First international project</p>
+          </div>
+          <div class="about-us_box">
+            <h3>2020</h3>
+            <p>Launching a personal web development course</p>
+          </div>
+          <div class="about-us_box">
+            <h3>2021+</h3>
+            <p>Started working in Google</p>
+          </div>
+        </div>
+
+      </section>
+      <section class="accordion-blog container" id="projects">
+        <h6>Projects</h6>
+        <h2>100+ projects on different topics:</h2>
+        <div class="tabs">
+          <div class="tabs__header">
+            <h6 class="tabs__header-item active">CRM</h6>
+            <h6 class="tabs__header-item">Blogs</h6>
+            <h6 class="tabs__header-item">Educational platform</h6>
+            <h6 class="tabs__header-item">Banking applications</h6>
+            <h6 class="tabs__header-item">Mobile applications</h6>
+            <h6 class="tabs__header-item">Mobile games</h6>
+            <h6 class="tabs__header-item">Social networks</h6>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">CRM</div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Why we use CRM?</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">CRM platforms can boost CX with business insights if sales agents use
+                        them properly. Sales leaders should know the benefits and challenges of these platforms before
+                        purchasing.</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Benefits of CRM platforms</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">CRM platforms offer many benefits, such as personalized marketing,
+                        increased productivity and AI-powered forecasting.</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Challenges of CRM platforms</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Despite their benefits, CRM platforms can introduce new challenges,
+                        such as data silos, manual data entry and resistance to change. Before sales leaders purchase
+                        CRM software, they should ensure their organization can handle these challenges.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">Blogs</div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Blog 1</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Blog 2</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Blog 3</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">Educational platform </div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Educational platform 1</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Educational platform 2</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Educational platform 3</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">Banking applications</div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Banking applications 1</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Banking applications 2</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Banking applications 3</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">Mobile applications</div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Mobile applications 1</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Mobile applications 2</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Mobile applications 3</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">Mobile games</div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Mobile games 1</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Mobile games 2</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Mobile games 3</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content-item">
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-title">Blogs</div>
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Social networks 1</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Social networks 2</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__item-trigger">
+                      <div class="trigger__text">Social networks 3</div>
+                      <div class="trigger__img">
+                        <img class="accordion-arrow" src="./images/arrow.svg" alt="not-found">
+                      </div>
+                    </div>
+                    <div class="accordion__item-content">
+                      <div class="content__text">Some kind of link to the site</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-modal container">
+        <h2 class="contact__title">Write to me and I will answer within the next 24 hours</h2>
+        <div class="modal__wrapper">
+          <div class="modal">
+            <div class="modal__close"> <img src="./images/close-modal.svg" alt="cancel" width="10px" height="10px">
+            </div>
+            <div class="modal__title"><span>Contact me:</span> </div>
+            <form action="sendmail.php" class="modal__body-contact form" id="form-modal">
+              <div class="modal-form-group">
+                <input type="text" class="contact-name input _req" placeholder="Name" name="name">
+                <div class="form-error">This field is required.</div>
+              </div>
+              <textarea class="contact-message input " placeholder="Message" cols="30" rows="10" name="message"></textarea>
+              <button type="submit" class="contact-button"> Discuss the project</button>
+              <div class="send-error">Cannot connect with server, please try again later!</div>
+              <div class="send-done">Send done successfully!</div>
+            </form>
+          </div>
+        </div>
+        <a href="#" class="btn modal__btn">Discuss the project</a>
+      </section>
+      <section class="reviews container" id="reviews">
+        <h6>Reviews</h6>
+        <h2>What my clients say about me:</h2>
+        <div class="reviews-wrapper">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slide-img"><img src="./images/Paul.png" alt="not-found"></div>
+                <div class="slide-title">Paul Kellerman</div>
+                <p class="slide-text">The performer who specifically understands the task. Very cool and easy to
+                  communicate. I did an excellent job, I will contact you. I advise everyone!</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img"><img src="./images/Gretchen.png" alt="not-found"></div>
+                <div class="slide-title">Gretchen Morgan</div>
+                <p class="slide-text">Thank you very much for your work, the project was completed very quickly and
+                  efficiently. I recommend it as a reliable performer! I will contact you in the future.</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img"><img src="./images/Lincoln.png" alt="not-found"></div>
+                <div class="slide-title">Lincoln Burrows</div>
+                <p class="slide-text">Thanks to Michael for doing everything efficiently on time and without broaches.
+                  I recommend this specialist for work. Special thanks to Michael for the work that was not included in
+                  the original.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-arrows">
+            <div class="left-arrow swiper_arrow"><img src="./images/left-arrow.svg" alt="not-found"></div>
+            <div class="right-arrow swiper_arrow"><img src="./images/right-arrow.svg" alt="not-found"></div>
+          </div>
+        </div>
+      </section>
+      <footer class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact-section__wrapper">
+            <div class="contact-section__form">
+              <div class="section__form_title">Calculate the timing and cost of your project</div>
+              <div class="section__form_subtitle">Leave your phone number for communication</div>
+              <form action="sendmail.php" class="section__form form" id="form">
+                <div class="section__form-group">
+                  <input type="text" class="section__form_name input _req" placeholder="Name" name="name">
+                  <div class="form-error">This field is required.</div>
+                </div>
+                <div class="section__form-group">
+                  <input type="number" class="section__form_phone input _req" placeholder="Phone" name="tel">
+                  <div class="form-error">This field is required.</div>
+                </div>
+                <textarea class="section__form_text input" placeholder="Message" name="message" cols="30" rows="10"></textarea>
+                <button type="submit" class="contact-button"> Discuss the project</button>
+                <div class="send-error">Cannot connect with server, please try again later!</div>
+                <div class="send-done">Send done successfully!</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+    </main>
+  </div>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="./js/script.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 132;
+  display: none;
+
+  .modal {
+    background: $black;
+    padding: 25px;
+    border-radius: 2px;
+    max-height: 350px;
+    max-width: 350px;
+
+    &__title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    &__close {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue;
+  color: $white;
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: -100px auto 0 auto;
+}
+
+.modal__body-contact {
+  text-align: left;
+
+  .input {
+    max-width: 300px;
+    width: 100%;
+    color: white;
+    background: none;
+    border-bottom: 1px solid $white;
+    margin: 25px 0;
+    padding: 5px;
+  }
+
+  input {
+    all: unset;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      color: $white;
+    }
+  }
+
+  textarea {
+    all: unset;
+    max-height: 80px;
+
+    &::placeholder {
+      resize: none;
+      font-weight: 400;
+      font-size: 16px;
+      color: $white;
+    }
+  }
+}
+
+.contact-button {
+  background-color: $black;
+  color: $white;
+  font-size: 16px;
+}
+
