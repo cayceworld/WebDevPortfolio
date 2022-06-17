@@ -166,3 +166,22 @@
     }
   }
 }
+
+@include for-tablet {
+  .accordion {
+    flex: 1 1 70%;
+
+    .accordion__item {
+      .trigger__text {
+        line-height: 12px;
+      }
+
+      .accordion__item-trigger {
+        .trigger__text {
+          line-height: 35px;
+        }
+      }
+
+    }
+  }
+}
