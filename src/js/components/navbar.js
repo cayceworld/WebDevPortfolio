@@ -27,7 +27,7 @@ function burgerMenu() {
     link.addEventListener('click', () => {
       menu.classList.remove('active');
       burger.classList.remove('active-burger');
-    })
+    });
   }
 
 }

@@ -38,15 +38,7 @@
       }
 
     }
-    @include for-tablet{
-      &-item.active {
-        &::before {
-          top: -65%;
 
-        }
-  
-      }
-    }
   }
 
   &__content {
@@ -54,6 +46,16 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+  }
+}
+
+@include for-tablet {
+  .tabs__content.active {
+    &::before {
+      top: -65%;
+
+    }
 
   }
 }
