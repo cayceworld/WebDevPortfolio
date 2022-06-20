@@ -48,6 +48,12 @@
     width: 100%;
 
   }
+
+  .tabs__header-item{
+    &:hover{
+      color: $white;
+    }
+  }
 }
 
 @include for-tablet {

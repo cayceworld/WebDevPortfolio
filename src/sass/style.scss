@@ -201,6 +201,14 @@
     &::after {
       left: 0;
     }
+
+    &:hover {
+      transform: translate(-8px, 0);
+
+      &::after {
+      transform: translate(8px, 0);
+      }
+    }
   }
 
   .right-arrow {
@@ -209,6 +217,15 @@
     &::after {
       right: 0;
     }
+
+    &:hover {
+      transform: translate(8px, 0);
+
+      &::after {
+        transform: translate(-8px, 0);
+      }
+    }
+
   }
 }
 
